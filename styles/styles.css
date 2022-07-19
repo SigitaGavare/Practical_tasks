@@ -1,4 +1,6 @@
-* { color: blue;
+* { color: brown;
+    background-color: aqua;  
+    border: 3px solid green;
 }
 
 @media (min-width:400 px) {
