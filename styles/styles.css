@@ -1,15 +1,15 @@
-* { color: brown;
-    background-color: aqua;  
-    border: 3px solid green;
-}
+* { background-color: rgb(235, 239, 208); }
 
-@media (min-width:400 px) {
-text-align: left;
-
-
-}
-@media (max-width:400 px) {
-    text-align: center;
-    
-    
+@media (max-width:600px) {
+table td > *{
+        display: block;
     }
+ table tr {
+        display: table-cell;
+    }
+    text-align: center;
+    display: block;   
+    }
+@media (min-width:600px)
+{ text-align: left;
+}
