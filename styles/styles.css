@@ -1,0 +1,13 @@
+* { color: blue;
+}
+
+@media (min-width:400 px) {
+text-align: left;
+
+
+}
+@media (max-width:400 px) {
+    text-align: center;
+    
+    
+    }
