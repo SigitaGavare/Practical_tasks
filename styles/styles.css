@@ -1,19 +1,12 @@
 * { background-color: rgb(235, 239, 208);}
 
-@media (min-width:600px) {
+@media (max-width:400px) 
+{body {text-align: center; width: 100%;}
+button {width: 100%; background-color: #008CBA}
+table {margin-left: auto; margin-right: auto}}
 
-    body {text-align: center;  
-    }
-    table{margin-left: auto;
-    margin-right: auto}
-}
-
-@media (max-width:600px){
-body { text-align: left;
-}
-table td > *{
-    display: block;
-}
-table tr {
-  display: table-cell;
-}}
+@media (min-width:400px){
+body { text-align: left;}
+button {background-color: #008CBA}
+table tr { display: table-cell;}
+table td > *{ display: block;}}
