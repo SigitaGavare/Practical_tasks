@@ -3,6 +3,8 @@ p.space{margin-bottom: 200px;}
 p{text-align: middle}
 .container {position: absolute;margin-left: auto; margin-right: auto; 
 margin-top: 10px}
+.card {position: absolute; margin-left: auto; margin-right: auto; 
+    margin-top: 100px; display: flex;}
 @media (max-width:400px) 
 {body {text-align: center; width: 100%;}
 button {width: 100%; background-color: #008CBA}
