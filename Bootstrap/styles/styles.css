@@ -1,4 +1,5 @@
 * { background-color: rgb(235, 239, 208);}
+
 @media (max-width:400px) 
 {body {text-align: center; width: 100%;}
 button {width: 100%; background-color: #008CBA}
