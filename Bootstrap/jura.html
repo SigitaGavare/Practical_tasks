@@ -9,38 +9,38 @@
 
 </head>
 <body>
-<p> Izvēlies bildi </p>
+<p style="text-align:center"> Izvēlies bildi </p>
 <div>
 <table cellpadding="1">
 <tbody>
     <tr>
         <td>
             <a href="https://sigitagavare.github.io/Practical_tasks/pelmenis.html">
-            <button type="button"> Pelmenis </button></a>
+            <button type="button" class="btn btn-primary btn-sm"> Pelmenis </button></a>
         </td>
     </tr>
     <tr>
         <td>
             <a href="https://sigitagavare.github.io/Practical_tasks/mezs.html">
-            <button type="button"> Mežs </button></a>
+            <button type="button" class="btn btn-primary btn-sm"> Mežs </button></a>
         </td>
     </tr>
     <tr>
         <td>
             <a href="https://sigitagavare.github.io/Practical_tasks/kakis.html">
-            <button type="button"> Kaķis </button></a>
+            <button type="button" class="btn btn-primary btn-sm"> Kaķis </button></a>
         </td>
     </tr>
     <tr>
         <td>
             <a href="https://sigitagavare.github.io/Practical_tasks/jura.html">
-            <button type="button"> Jūra </button></a> 
+            <button type="button" class="btn btn-primary btn-sm"> Jūra </button></a> 
         </td>
     </tr>
     <tr>
         <td>
             <a href="https://sigitagavare.github.io/Practical_tasks/visums.html">
-            <button type="button"> Visums </button></a>
+            <button type="button" class="btn btn-primary btn-sm"> Visums </button></a>
         </td>
     </tr>
 
@@ -50,7 +50,25 @@
      <img src="https://sigitagavare.github.io/Practical_tasks/jura.jpg" height="200" width="300">
 </div>
 </div>
-
+<div class="container">
+    <button class="btn btn-default btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#myModal">Papildus informācija</button>
+    
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    Papildus informācija
+                </div>
+                <div class="modal-body">
+                    <p>Šī ir mana pirmā lapa HTML, kur izmantots arī CSS</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn- btm-primary btn-sm" data-bs-dismiss="modal">Atpakaļ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>
