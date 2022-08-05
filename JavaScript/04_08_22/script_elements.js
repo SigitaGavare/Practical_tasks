@@ -3,10 +3,10 @@
 // Print out elements which are negative. +
 // Print out elements which are odd (uneven) + 
 // Compute how many elements are odd (uneven).+
-// Verify if there are multiple elements with the same value+
 // Print out each second element.+
 // Compute average value of the array.+
 // Establish how many elements are smaller than average value.
+// Verify if there are multiple elements with the same value+
 
 const Numbers=[];
 const Negative=[];
@@ -44,12 +44,7 @@ for (let j=1; j<6; j++){
     }
 }
 alert("Numbers smaller that average value: " + Smaller);
-alert("Duplicate elements: "+ Duplicates)
+alert("Duplicate elements: "+ Dublicates)
 
-// const toFindDuplicates = Numbers 
-// Numbers.filter((item, index) 
-// arr.indexOf(item) !== index) 
-// const duplicateElements = tofindDuplicates(Numbers);
-// alert("Duplicate elements: "+ duplicateElements);
 
 
