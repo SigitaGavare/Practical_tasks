@@ -3,7 +3,10 @@ function summ(){
     const secondNum = document.getElementById("secondNumber").value;
     const result = Number(firstNum) + Number(secondNum);
     const resultElement = document.getElementById("resultbut");
-    resultElement.innerText= "The result is = " + result;
+    if (isNaN(result)){
+        alert("Input must be numbers!")}
+    else {
+    resultElement.innerText= "The result is = " + result;}
     resultElement.style.border = "1px solid black";
 };
 
@@ -13,7 +16,10 @@ function Subtraction(){
     const secondNum = document.getElementById("secondNumber").value;
     const result = Number(firstNum) - Number(secondNum);
     const resultElement = document.getElementById("resultbut");
-    resultElement.innerText= "The result is = " + result;
+    if (isNaN(result)){
+        alert("Input must be numbers!")}
+    else {
+    resultElement.innerText= "The result is = " + result;}
     resultElement.style.border = "1px solid black";
 };
 function Multiplication(){
@@ -21,7 +27,10 @@ function Multiplication(){
     const secondNum = document.getElementById("secondNumber").value;
     const result = Number(firstNum) * Number(secondNum);
     const resultElement = document.getElementById("resultbut");
-    resultElement.innerText= "The result is = " + result;
+    if (isNaN(result)){
+        alert("Input must be numbers!")}
+    else {
+    resultElement.innerText= "The result is = " + result;}
     resultElement.style.border = "1px solid black";
 };
 function Division(){
@@ -29,7 +38,10 @@ function Division(){
     const secondNum = document.getElementById("secondNumber").value;
     const result = Number(firstNum) / Number(secondNum);
     const resultElement = document.getElementById("resultbut");
-    resultElement.innerText= "The result is = " + result;
+    if (isNaN(result)){
+        alert("Input must be numbers!")}
+    else {
+    resultElement.innerText= "The result is = " + result;}
     resultElement.style.border = "1px solid black";
 };
 function Modulus(){
@@ -37,6 +49,9 @@ function Modulus(){
     const secondNum = document.getElementById("secondNumber").value;
     const result = Number(firstNum) % Number(secondNum);
     const resultElement = document.getElementById("resultbut");
-    resultElement.innerText= "The result is = " + result;
+    if (isNaN(result)){
+        alert("Input must be numbers!")}
+    else {
+    resultElement.innerText= "The result is = " + result;}
     resultElement.style.border = "1px solid black";
 };
