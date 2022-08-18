@@ -13,46 +13,48 @@
 
 </head>
 <body>
-<div><table> <tr><td id="result">10</td></tr></table>
+<div>
+<p id="result">10</p>
+
 <div style="display: block">
-<button class="btn btn-success" id="percent">%</button>
-<button class="btn btn-danger" id="delAll">CE</button>
-<button class="btn btn-danger" id="delThis">C</button>
-<button class="btn btn-danger" id="del">⌫</button>
+<button class="btn btn-success" id="percent" onclick="percent()">%</button>
+<button class="btn btn-danger" id="delAll" onclick="delAll()">CE</button>
+<button class="btn btn-danger" id="delThis" onclick="delThis()">C</button>
+<button class="btn btn-danger" id="del" onclick="del()">⌫</button>
 </div>
 <p class="space"></p>
 <div style="display: block">
-<button class="btn btn-success" id="reverse">1/x</button>
-<button class="btn btn-success" id="sqr">x^2</button>
-<button class="btn btn-success" id="sqrt">√</button>
-<button class="btn btn-success" id="division">÷</button>
+<button class="btn btn-success" id="reverse" onclick="reverse()">1/x</button>
+<button class="btn btn-success" id="sqr" onclick="sqr()">x^2</button>
+<button class="btn btn-success" id="sqrt" onclick="sqrt()">√</button>
+<button class="btn btn-success" id="division" onclick="division()">÷</button>
 </div>
 <p class="space"></p>
 <div style="display: block">
-<button class="btn btn-primary number" id="7">7</button>
-<button class="btn btn-primary number" id="8">8</button>
-<button class="btn btn-primary number" id="9">9</button>
+<button class="btn btn-primary number" onclick="add7()" value="7">7</button>
+<button class="btn btn-primary number" onclick="add8()" value="8">8</button>
+<button class="btn btn-primary number" onclick="add9()" value="9">9</button>
 <button class="btn btn-success" id="multiplication">*</button>
 </div>
 <p class="space"></p>
 <div style="display: block">
-<button class="btn btn-primary number" id="4">4</button>
-<button class="btn btn-primary number" id="5">5</button>
-<button class="btn btn-primary number" id="6">6</button>
+<button class="btn btn-primary number" value="4" onclick="add4()">4</button>
+<button class="btn btn-primary number" value="5" onclick="add5()">5</button>
+<button class="btn btn-primary number" value="6" onclick="add6()">6</button>
 <button class="btn btn-success" id="subtraction">-</button>
 </div>
 <p class="space"></p>
 <div style="display: block">
-<button class="btn btn-primary number" id="1">1</button>
-<button class="btn btn-primary number" id="2">2</button>
-<button class="btn btn-primary number" id="3">3</button>
+<button class="btn btn-primary number" value="1" onclick="add1()">1</button>
+<button class="btn btn-primary number" value="2" onclick="add2()">2</button>
+<button class="btn btn-primary number" value="3" onclick="add3()">3</button>
 <button class="btn btn-success" id="sum">+</button>
 
 </div>
 <p class="space"></p>
 <div style="display: block">
 <button class="btn btn-primary" id="minus">-/+</button>
-<button class="btn btn-primary number" id="0">0</button>
+<button class="btn btn-primary number" value="0" onclick="add0()">0</button>
 <button class="btn btn-primary" id="dot">.</button>
 <button class="btn btn-warning" id="calculate">=</button>
 </div></div>
