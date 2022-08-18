@@ -17,7 +17,7 @@ function addElements(){
     });
 }
 function filter(){
-    if ($("select").val() == ""){
+    if ($("select").val() == "All"){
         $("td.phones").each(function (){
                 $(this).parent().show();})}
     else {$("td.phones").each(function (){
@@ -26,13 +26,3 @@ function filter(){
     else
         $(this).parent().show();
 })}}
-
-// $.each($(".table tbody").find("tr"), function () {
-//     if ($(this).text().toLowerCase().replace(/\s+/g, '').indexOf(searchText.replace(/\s+/g, '').toLowerCase()) == $("select").val())
-//         $(this).parent().hide();
-//     else
-//         $(this).parent().show();
-// });}
-// $("td").filter(function() {
-//     return $(this).text() == $("select").val();
-// })

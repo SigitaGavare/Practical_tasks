@@ -15,16 +15,16 @@
 <body>
 <h4> Filter </h4>
 <div id="tab"> 
-<table class="table">
-<thead class="thead-dark">
-    <td> Phone </td>
-    <td> Colour </td>
+<table class="table table-striped">
+<thead>
+    <th> Phone </th>
+    <th> Colour </th>
 </thead>
 <tbody>
 <tr>
     <td> 
-        <label for="Filter">Filter<select id="phoneFilter" onclick="filter()">
-            <option></option>
+        <label for="Filter">Filter<select id="phoneFilter" onchange="filter()">
+            <option>All</option>
             <option>Samsung</option>
             <option>Iphone</option>
         </select></label>
