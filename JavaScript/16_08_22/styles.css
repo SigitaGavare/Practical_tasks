@@ -1,9 +1,5 @@
-td {border-style:dashed;
-    border-width: 0.5px;
-    border-color: gray;
-height: 100px;
-width: 215px;
-text-align: center;}
+td {height: 100px;
+width: auto;}
 button.btn{width: 50px;}
 p.space{margin-bottom: 5px;}
 body {margin-left: 200px;

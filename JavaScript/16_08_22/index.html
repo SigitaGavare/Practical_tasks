@@ -14,8 +14,14 @@
 </head>
 <body>
 <div>
-<p id="result">10</p>
-
+    <table>
+        <tr>
+            <td id="y"></td>
+            <td id="operator"></td>
+            <td id="result">0</td>
+        </tr>
+    </table>
+</div>
 <div style="display: block">
 <button class="btn btn-success" id="percent" onclick="percent()">%</button>
 <button class="btn btn-danger" id="delAll" onclick="delAll()">CE</button>
@@ -34,29 +40,30 @@
 <button class="btn btn-primary number" onclick="add7()" value="7">7</button>
 <button class="btn btn-primary number" onclick="add8()" value="8">8</button>
 <button class="btn btn-primary number" onclick="add9()" value="9">9</button>
-<button class="btn btn-success" id="multiplication">*</button>
+<button class="btn btn-success" id="multiplication" onclick="multiplication()">*</button>
 </div>
 <p class="space"></p>
 <div style="display: block">
 <button class="btn btn-primary number" value="4" onclick="add4()">4</button>
 <button class="btn btn-primary number" value="5" onclick="add5()">5</button>
 <button class="btn btn-primary number" value="6" onclick="add6()">6</button>
-<button class="btn btn-success" id="subtraction">-</button>
+<button class="btn btn-success" id="subtraction" onclick="subtraction()">-</button>
 </div>
 <p class="space"></p>
 <div style="display: block">
 <button class="btn btn-primary number" value="1" onclick="add1()">1</button>
 <button class="btn btn-primary number" value="2" onclick="add2()">2</button>
 <button class="btn btn-primary number" value="3" onclick="add3()">3</button>
-<button class="btn btn-success" id="sum">+</button>
+<button class="btn btn-success" id="sum" onclick="sum()">+</button>
 
 </div>
 <p class="space"></p>
 <div style="display: block">
-<button class="btn btn-primary" id="minus">-/+</button>
+<button class="btn btn-primary" id="minus" onclick="minus()">-/+</button>
 <button class="btn btn-primary number" value="0" onclick="add0()">0</button>
-<button class="btn btn-primary" id="dot">.</button>
-<button class="btn btn-warning" id="calculate">=</button>
-</div></div>
+<button class="btn btn-primary" id="dot" onclick="dot()">.</button>
+<button class="btn btn-warning" id="calculate" onclick="calculate()">=</button>
+</div>
+</div>
 </body>
 </html>
