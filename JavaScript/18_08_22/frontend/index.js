@@ -1,29 +1,29 @@
-$($.getJSON("http://localhost:5000/get-allCustomer", 
-function (data){
-    const customers = data.response.customers;
-    const customersTabElement =$("#customersTab");
-    for (let i=0; i < customers.lenght; i++){
-        const customer = customers [i];
+$($.getJSON("http://localhost:5000/get-allCustomer",
+    function(data) {
 
-        let row= document.createElement("tr");
-        
-        let firstName= document.createElement("td");
-        firstName.innerHTML = customer.firstName;
-        firstName.append(firstName);
+        const customers = data.response.customers;
+        const customersTabElement = $("#customersTab");
+        for (let i = 0; i < customers.length; i++) {
+            const customer = customers[i];
 
-        let lastName= document.createElement("td");
-        lastName.innerHTML = customer.lastName;
-        lastName.append(lastName);
+            const row = document.createElement("tr");
 
-        let email= document.createElement("td");
-        email.innerHTML = customer.email;
-        email.append(email)
+            const firstName = document.createElement("td");
+            firstName.innerHTML = customer.firstname;
+            row.append(firstName);
 
-        let phone= document.createElement("td");
-        phone.innerHTML = customer.phone;
-        phone.append(lastName)
-    }
+            const lastName = document.createElement("td");
+            lastName.innerHTML = customer.lastname;
+            row.append(lastName);
 
-}
-))
+            const email = document.createElement("td");
+            email.innerHTML = customer.email;
+            row.append(email);
 
+            const phone = document.createElement("td");
+            phone.innerHTML = customer.phone;
+            row.append(phone);
+
+            customersTabElement.append(row);
+        }
+    }))
