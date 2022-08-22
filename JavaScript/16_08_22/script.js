@@ -8,20 +8,23 @@ else {
     x = Number(document.getElementById("x").innerText)}
 x*= 0.01;
 document.getElementById("result").innerText = x;
+document.getElementById("x").innerText ="";
 };
 function delAll(){
-    document.getElementById("result").innerText = 0;
+    document.getElementById("result").innerText = "";
     document.getElementById("y").innerText ="";
-    document.getElementById("x").innerText ="";
+    document.getElementById("x").innerText =0;
     document.getElementById("operator").innerText =  "";
 };
 function delThis(){
-    document.getElementById("x").innerText = 0
+    document.getElementById("x").innerText = 0;
+    document.getElementById("result").innerText = "";
 };
 function del(){    
     x=document.getElementById("x").innerText;
     var m=x.substring(0, x.length - 1);
-    document.getElementById("x").innerText = m
+    document.getElementById("x").innerText = m;
+    document.getElementById("result").innerText = "";
 };
 function reverse(){
     if (document.getElementById("x").innerText == ""){
@@ -29,7 +32,8 @@ function reverse(){
     else {
         x = Number(document.getElementById("x").innerText)}
     x = 1/x;
-    document.getElementById("result").innerText = x
+    document.getElementById("result").innerText = x;
+    document.getElementById("x").innerText ="";
 };
 function sqr(){
     if (document.getElementById("x").innerText == ""){
@@ -38,6 +42,7 @@ function sqr(){
         x = Number(document.getElementById("x").innerText)}
     y = x*x;
     document.getElementById("result").innerText = y;
+    document.getElementById("x").innerText ="";
 };
 function sqrt(){
     if (document.getElementById("x").innerText == ""){
@@ -45,7 +50,8 @@ function sqrt(){
     else {
         x = Number(document.getElementById("x").innerText)}
     x = (Math.sqrt(x));
-    document.getElementById("result").innerText = x
+    document.getElementById("result").innerText = x;
+    document.getElementById("x").innerText ="";
 };
 
 function division(){
@@ -158,14 +164,23 @@ function multiplication(){
             }};
 
 function minus(){
-    x = Number(document.getElementById("x").innerText);
+    if (document.getElementById("x").innerText == ""){
+        x = Number(document.getElementById("result").innerText)}
+    else {
+        x = Number(document.getElementById("x").innerText)}
     x*= -1;
     document.getElementById("x").innerText = x};
 function dot(){
-    x = document.getElementById("x").innerText;
+    if (document.getElementById("x").innerText == ""){
+        document.getElementById("x").innerText = 0;
+        x = document.getElementById("x").innerText;
+        document.getElementById("result").innerText = ""}
+    else {
+    x = document.getElementById("x").innerText;}
     if (x.includes(".")==false) {
         x += "." }
-    document.getElementById("x").innerText = x};
+    document.getElementById("x").innerText = x;
+    document.getElementById("result").innerText = ""};
 
 function calculate(){
     if (document.getElementById("operator").innerText == "") { }
