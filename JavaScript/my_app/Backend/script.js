@@ -19,7 +19,7 @@ const connection = mysql.createConnection({
 
 connection.connect((error) => {
     if (error)
-        throw (error);
+        throw error;
     console.log("Connected to the database");
 })
 
@@ -28,7 +28,7 @@ app.get("/get-allCustomer", (req, res) => {
     const sqlQuery = "SELECT * FROM customers";
     connection.query(sqlQuery, (error, results) => {
         if (error)
-            throw (error);
+            throw error;
         res.send(JSON.stringify({ "status": 200, "error": null, "response": { customers: results } }))
     })
 })
@@ -37,22 +37,39 @@ app.post("/add-customer", (req, res) => {
     const newCustomer = {
         firstname: req.body.name,
         lastname: req.body.lastname,
-        email: req.body.email,
         phone: req.body.phone,
-        vip: req.body.vip };
-var sqlAdd = "INSERT INTO `customers`(`firstname`, `lastname`, `email`, `phone`, `VIP`) VALUES (newCustomer.firstname,newCustomer.lastname,newCustomer.email,newCustomer.phone,newCustomer.vip)";
-connection.query(sqlAdd, (error) => {
-    if (error)
-        throw (error);});
-res.send("Customer is added");
-    // fs.readFile('AllCustomers.json', "utf8", (err, data) => {
-    //     const customers = JSON.parse(data);
-    //     customers.customers.push(newCustomer);
-    //     fs.writeFile('AllCustomers.json', JSON.stringify(customers, null, 3), function(err) {
-    //         res.send("Customer is added");
-    //     });
-    // })
+        email: req.body.email,
+        vip: req.body.vip == "Yes" ? 1 : 0
+    };
+    const sqlQuery = "INSERT INTO customers (firstname,lastname,email,phone,vip) VALUES (?,?,?,?,?)";
+    connection.query(sqlQuery, [newCustomer.firstname, newCustomer.lastname,
+        newCustomer.email, newCustomer.phone, newCustomer.vip
+    ], (error, results) => {
+        if (error)
+            throw error;
+        res.send(JSON.stringify({
+            "status": 200,
+            "error": null,
+            "response": "Customer ID : " + results.insertId + " created!"
+        }))
+    })
 })
+
+app.post("/delete-customer", (req, res) => {
+    const delCustomer = {
+        id: req.body.id};
+    const sqlQuery = "DELETE FROM `customers` WHERE id=(?)";
+    connection.query(sqlQuery, [delCustomer.id] ,(error, results) => {
+        if (error)
+            throw error;
+        res.send(JSON.stringify({
+            "status": 200,
+            "error": null,
+            "response": "Customer deleted!"
+        }))
+    })
+})
+
 
 app.listen(5000, () => {
     console.log("Server is running on port 5000");
