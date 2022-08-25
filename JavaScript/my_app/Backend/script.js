@@ -37,11 +37,14 @@ app.post("/add-customer", (req, res) => {
     const newCustomer = {
         firstname: req.body.name,
         lastname: req.body.lastname,
-        phone: req.body.phone,
         email: req.body.email,
+        phone: req.body.phone,
         vip: req.body.vip };
-// const sqlAdd = "INSERT INTO `customers`(`firstname`, `lastname`, `email`, `phone`, `VIP`) VALUES ('newCustomer.firstname','newCustomer.lastname','newCustomer.email','newCustomer.phone','newCustomer.vip')";
-// res.send("Customer is added");
+var sqlAdd = "INSERT INTO `customers`(`firstname`, `lastname`, `email`, `phone`, `VIP`) VALUES (newCustomer.firstname,newCustomer.lastname,newCustomer.email,newCustomer.phone,newCustomer.vip)";
+connection.query(sqlAdd, (error) => {
+    if (error)
+        throw (error);});
+res.send("Customer is added");
     // fs.readFile('AllCustomers.json', "utf8", (err, data) => {
     //     const customers = JSON.parse(data);
     //     customers.customers.push(newCustomer);

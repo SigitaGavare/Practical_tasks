@@ -25,7 +25,7 @@ $($.getJSON("http://localhost:5000/get-allCustomer",
             row.append(phone);
 
             const vip = document.createElement("td");
-            vip.innerHTML = Number(customer.vip) === 1 ? "Yes" :"No";
+            vip.innerHTML = Number(customer.vip) == 1 ? "Yes" : "No";
             row.append(vip);
 
             customersTabElement.append(row);
