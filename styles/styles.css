@@ -3,7 +3,8 @@
 {body {text-align: center; width: 100%;}
 button {width: 100%; background-color: #008CBA}
 table {margin-left: auto; margin-right: auto}}
-
+p.space{margin-bottom: 50px;
+    background-color: rgb(235, 239, 208)}
 @media (min-width:400px){
 body { text-align: left;}
 button {background-color: #008CBA}

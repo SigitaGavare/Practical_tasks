@@ -1,0 +1,21 @@
+/* mobile */
+@media (max-width:400px) {
+/* body {text-align: center; width: 100%;}
+button {width: 100%;}
+table {margin-left: auto; margin-right: auto} */}
+
+/* desktop */
+@media (min-width:400px){
+/* body { text-align: left;}
+table tr { display: table-cell;}
+table td > *{ display: block;} */}
+/* general */
+p.space{margin-bottom: 50px;};
+.header{display: inline-block;};
+.nav{
+    text-align:center;
+    display: flex;
+    flex-basis: auto;
+    height: 100%;
+    width: 100%
+}
