@@ -11,7 +11,7 @@ table tr { display: table-cell;}
 table td > *{ display: block;} */}
 /* general */
 p.space{margin-bottom: 50px;};
-.header{display: inline-block;};
+.header{display: flex;};
 .nav{
     text-align:center;
     display: flex;
