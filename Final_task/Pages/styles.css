@@ -33,16 +33,93 @@ p.justified{
     text-align: justify;
     margin-left: 50px;
     margin-right: 50px}
-p#SignIn{
+button#SignIn{
     margin-left: 0px;
     margin-right: 0px;
     display: inline;
     width: 100px;
-    }
-header a{color: #707071;
+    color: #707071;
     text-decoration: none;
     clear: both;
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;}
 p.card-text{text-align: justify}
+.specialists{
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;}
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+.map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
+div.contacts{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px
+}
+
+/* Login */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; 
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+
+div.login{ 
+    border: 5px;
+    display: block;
+}
