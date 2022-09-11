@@ -29,7 +29,7 @@ p.space{
     height:100px}
 div.card{
     margin: 10px}
-p{
+p.justified {
     text-align: justify;
     margin-left: 50px;
     margin-right: 50px}
@@ -45,3 +45,4 @@ header a{color: #707071;
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;}
+p.card-text{text-align: justify}

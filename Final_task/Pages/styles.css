@@ -4,45 +4,45 @@
     button {width: 100%;}
     table {margin-left: auto; margin-right: auto} */}
     
-    /* desktop */
+/* desktop */
     @media (min-width:400px){
     /* body { text-align: left;}
     table tr { display: table-cell;}
     table td > *{ display: block;} */}
     
-    /* general */
-    .navbar-nav{
-        margin-left: 50px;
-        margin-right: 50px}
-    p.space{
-        margin-bottom: 50px;}
-    .header{
-        margin-left: 50px;
-        margin-right: 50px}
-    .nav{
-        text-align:center;
-        display: flex;
-        flex-basis: auto;
-        height: 100%;
-        width: 100%}
-    #logo{
-        height:100px}
-    div.card{
-        margin: 10px}
-    p{
-        text-align: justify;
-        margin-left: 50px;
-        margin-right: 50px}
-    p#SignIn{
-        margin-left: 0px;
-        margin-right: 0px;
-        display: inline;
-        width: 100px;
-        }
-    header a{color: #707071;
-        text-decoration: none;
-        clear: both;
-        display: inline-block;
-        overflow: hidden;
-        white-space: nowrap;}
-    
+/* general */
+.navbar-nav{
+    margin-left: 50px;
+    margin-right: 50px}
+p.space{
+    margin-bottom: 50px;}
+.header{
+    margin-left: 50px;
+    margin-right: 50px}
+.nav{
+    text-align:center;
+    display: flex;
+    flex-basis: auto;
+    height: 100%;
+    width: 100%}
+#logo{
+    height:100px}
+div.card{
+    margin: 10px}
+p.justified{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px}
+p#SignIn{
+    margin-left: 0px;
+    margin-right: 0px;
+    display: inline;
+    width: 100px;
+    }
+header a{color: #707071;
+    text-decoration: none;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;}
+p.card-text{text-align: justify}
