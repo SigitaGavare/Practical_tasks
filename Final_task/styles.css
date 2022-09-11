@@ -24,3 +24,10 @@ img{margin: 0;
     padding: 0;
     border: 0;
     outline: 0;}
+@media (max-width:950px) {
+    #specialists {display: block;} 
+    }
+
+div#specialists {display: flex;} 
+
+    
