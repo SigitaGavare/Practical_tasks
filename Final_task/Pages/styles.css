@@ -46,9 +46,8 @@ button#SignIn{
     white-space: nowrap;}
 p.card-text{text-align: justify}
 .specialists{
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;}
+    margin-left: 50px;
+    margin-right: 50px}
 .map-container{
     overflow:hidden;
     padding-bottom:56.25%;
@@ -87,10 +86,8 @@ div.contacts{
     background-color: #fefefe;
     margin: 5px auto; 
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%; 
   }
-  
-  /* The Close Button */
   .close {
     position: absolute;
     right: 25px;
@@ -144,25 +141,13 @@ input[type=text], input[type=password] {
     margin-bottom: 25px;
   }
   
-  button {
-    background-color: #04AA6D;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-  }
-  
   button:hover {
     opacity:1;
   }
-  .cancelbtn {
+  .cancel {
     padding: 14px 20px;
-    background-color: #f44336;
   }
-  .cancelbtn, .signupbtn {
+  .cancel, .signup {
     float: left;
     width: 50%;
   }
@@ -175,7 +160,7 @@ input[type=text], input[type=password] {
     display: table;
   }
   @media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
+    .cancel, .signup {
       width: 100%;
     }
   }

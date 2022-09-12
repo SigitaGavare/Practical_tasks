@@ -9,7 +9,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://kit.fontawesome.com/d982a44bc3.js" crossorigin="anonymous"></script>
-<title> Log In </title>
+<title> Sign up </title>
 </head>
 <body>
 <header>
@@ -80,23 +80,25 @@
 <div>
     <button type="submit" class="btn btn-success" style="margin-bottom: 10px; width: 95%">Login</button>
     <div> <label>
-    <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 20px"> Remember me
+    <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 5px"> Remember me
     </label></div>
 </div>
 </div>
-<div class="container" style="margin-bottom: 20px">
+<div style="margin-bottom: 20px; margin-left: 10px;">
     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-danger">Cancel</button>
-    <p class="" style="width: 100%;"></p>
-    <span class="psw " style="margin-bottom: 20px"><a href="#">Forgot password?</a></span>
+    <p style="width: 100%;"></p>
+    <span class="psw"><a href="#">Forgot password?</a></span>
 </div>
+<div style="margin-bottom: 20px; margin-left: 10px;"><span class="psw" style="margin-bottom: 20px">If you don't have a profile yet, please <a href="https://sigitagavare.github.io/Practical_tasks/Final_task/Pages/SignIn.html">Sign up!</a></span></div>
 </form>
 </div>
-<form action="action_page.php" style="border:1px solid #ccc">
-    <div class="container">
+<!-- Login -->
+<!-- Sign up -->
+<form action="action_page.php" >
+    <div class="container" style="width:600px">
       <h4>Sign Up</h4>
       <p>Please fill in this form to create an account.</p>
       <hr>
-  
       <label for="email"><b>Email</b></label>
       <input type="text" placeholder="Enter Email" name="email" required>
   
@@ -107,17 +109,17 @@
       <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
   
       <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:20px"> Remember me
       </label>
   
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      <p style="margin-bottom:20px">By creating an account you agree to our <a href="#" style="color:dodgerblue" >Terms & Privacy</a>.</p>
   
-      <div class="clearfix">
-        <button type="submit" class="signupbtn">Sign Up</button>
-        <button type="button" class="cancelbtn">Cancel</button>
-        
+      <div class="clearfix" style="margin-bottom: 30px">
+        <button type="submit" class="btn btn-success signup">Sign Up</button>
+        <button type="button" class="btn btn-danger cancel">Cancel</button>
       </div>
     </div>
   </form>
+<!-- Sign up -->
 </body>
 </html>
