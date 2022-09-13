@@ -194,3 +194,29 @@ button:hover {
   }
 }
 /* Sign up*/
+
+.footer{
+  background-color: #ffffff;
+  margin: 50px;
+  border-top: solid 1px #000;
+}
+div.footText{
+  text-align: center;
+}
+p.footText{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: block;
+  clear: both;
+  overflow: hidden;
+  white-space: nowrap;
+  
+}
+a.nicelinks{
+  text-decoration: none;
+  color: #000;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  white-space: nowrap;
+}
