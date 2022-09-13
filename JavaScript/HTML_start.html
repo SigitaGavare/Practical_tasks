@@ -1,22 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
 <head>
-<title>  </title>
-<link rel="stylesheet" href="styles/styles.css">
-<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles.css">
 <script src="script.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://kit.fontawesome.com/d982a44bc3.js" crossorigin="anonymous"></script>
+<title> Our Nutritionists </title>
 </head>
 <body>
-<h1> This is JavaScript page </h1>
-<div style="display: block;"> 
-<img src="https://sigitagavare.github.io/Practical_tasks/JavaScript/Pictures/1.jpg" height="200" width="300">
-<img src="https://sigitagavare.github.io/Practical_tasks/JavaScript/Pictures/2.jpg" height="200" width="300">
-<img src="https://sigitagavare.github.io/Practical_tasks/JavaScript/Pictures/3.jpg" height="200" width="300">
+<header>
+  <div class="header d-flex">
+    <div class="mr-auto p-2">
+    <a href="https://sigitagavare.github.io/Practical_tasks/Final_task/index.html">
+        <img id="logo" src="https://sigitagavare.github.io/Practical_tasks/Final_task/content/logo.jpg"></a>
+    </div>
+    <div class="p-2" style="width: 100%"></div>
+    <div class="mr-auto p-2 align-self-start">
+        <button id="SignIn" type="button" class="btn btn-outline-success" onclick="document.getElementById('id01').style.display='block'"><i class="fa-regular fa-circle-user"></i> Login</button> 
+    
+    </div>
+    <div class="mr-auto p-2 align-self-start">
+     <a href="https://sigitagavare.github.io/Practical_tasks/Final_task/Pages/SignIn.html"> <button id="SignUp" type="button" class="btn btn-success"><i class="fa-solid fa-circle-user"></i> Sign up </button> 
+     </a>
+  </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- mobile navigation -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- web navigation -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="https://sigitagavare.github.io/Practical_tasks/Final_task/index.html"> About Us </a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="https://sigitagavare.github.io/Practical_tasks/Final_task/Pages/Specialists.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Our Nutritionists <span class="sr-only">(current)</span></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Māra Zālīte</a>
+              <a class="dropdown-item" href="#">Juris Kalniņš</a>
+              <a class="dropdown-item" href="#">Maija Lapa</a>
+              <a class="dropdown-item" href="#">Mike Oak</a>
+              <a class="dropdown-item" href="#">Mārtiņš Raks</a>
+              <a class="dropdown-item" href="#">Jekaterina Kolava</a>
+            </div>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://sigitagavare.github.io/Practical_tasks/Final_task/Pages/Booking.html">Book Now</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://sigitagavare.github.io/Practical_tasks/Final_task/Pages/Prices.html">Price List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://sigitagavare.github.io/Practical_tasks/Final_task/Pages/Contacts.html">Contacts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://sigitagavare.github.io/Practical_tasks/Final_task/Pages/Privacy.html">Privacy Policy</a>
+        </li>
+      </ul>
+    </div>
+</nav> 
+<div>
+</header>
+<p class="space"></p>
+
+<div class="specialists" style="display:flex">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://sigitagavare.github.io/Practical_tasks/Final_task/content/Mara_Zalite.jpg" alt="Mara Zalite">
+        <div class="card-body">
+          <h5 class="card-title">Māra Zālīte</h5>
+          <p class="card-text">Experienced nutritionist specialised in children and teenagers.</p>
+          <a href="#" class="btn btn-primary">More info</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://sigitagavare.github.io/Practical_tasks/Final_task/content/Juris_Kalnins.jpg" alt="Juris Kalnins">
+        <div class="card-body">
+          <h5 class="card-title">Juris Kalniņš</h5>
+          <p class="card-text">Juris is an expert in working with athletes and clients with an active lifestyle.</p>
+          <a href="#" class="btn btn-primary">More info</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://sigitagavare.github.io/Practical_tasks/Final_task/content/Maija_Lapa.jpg" alt="Maija Lapa">
+        <div class="card-body">
+          <h5 class="card-title">Maija Lapa</h5>
+          <p class="card-text">Maija's goal is to improve the lives of every client. She will help You to live a healthy and balanced life.</p>
+          <a href="#" class="btn btn-primary">More info</a>
+        </div>
+      </div>
+</div>
+<div class="specialists" style="display:flex">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://sigitagavare.github.io/Practical_tasks/Final_task/content/Martins_Raks.jpg" alt="Martins Raks">
+        <div class="card-body">
+          <h5 class="card-title">Mārtiņš Raks</h5>
+          <p class="card-text">Experienced nutritionist specialised in adults, working in Latgale region.</p>
+          <a href="#" class="btn btn-primary">More info</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://sigitagavare.github.io/Practical_tasks/Final_task/content/Mike_Oak.jpg" alt="Mike Oak">
+        <div class="card-body">
+          <h5 class="card-title">Mike Oak</h5>
+          <p class="card-text">Mike is an expert in working with athletes and clients with an active lifestyle.</p>
+          <a href="#" class="btn btn-primary">More info</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://sigitagavare.github.io/Practical_tasks/Final_task/content/Jekaterina_Kolava.jpg" alt="Jekaterina Kolava">
+        <div class="card-body">
+          <h5 class="card-title">Jekaterina Kolava</h5>
+          <p class="card-text">Jekaterina's goal is to improve the lives of every client. She will help You to live a healthy and balanced life.</p>
+          <a href="#" class="btn btn-primary">More info</a>
+        </div>
+      </div>
+</div>
+<div>
+
 </div>
 
 </body>
-
 </html>
