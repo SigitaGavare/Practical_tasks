@@ -55,6 +55,11 @@ button#SignUp{
   overflow: hidden;
   white-space: nowrap;}
 p.card-text{text-align: justify}
+.about{
+  margin-left: 50px; 
+  margin-right: 50px; 
+  text-align: center
+}
 .specialists{
     height: auto;
     margin-right: auto;
