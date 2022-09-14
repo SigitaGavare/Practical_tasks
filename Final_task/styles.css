@@ -125,11 +125,10 @@ button:hover {
 /* general */
 div.content{
   margin-left: 150px;
-    margin-right: 150px
-}
+    margin-right: 150px}
 .navbar-nav{
     margin-left: 150px;
-    margin-right: 150px}
+    margin-right: 150px;}
 p.space{
     margin-bottom: 50px;}
 .header{
@@ -142,7 +141,9 @@ p.space{
     height: 100%;
     width: 100%}
 #logo{
-    height:100px}
+    height:100px;
+  margin-top: 20px;
+margin-bottom: 60px;}
 div.card{
     margin: 10px}
 p.justified {
