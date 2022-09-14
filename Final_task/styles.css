@@ -74,8 +74,7 @@ button#SignUp{
 
 div.login{ 
   border: 5px;
-  display: block;
-}
+  display: block;}
 * {box-sizing: border-box}
 
 /* Sign up*/
@@ -95,7 +94,7 @@ hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;}
 
-button {
+/* button {
   background-color: #04AA6D;
   color: white;
   padding: 14px 20px;
@@ -103,7 +102,7 @@ button {
   border: none;
   cursor: pointer;
   width: 100%;
-  opacity: 0.9;}
+  opacity: 0.9;} */
 
 button:hover {
   opacity:1;}
@@ -154,10 +153,6 @@ p.card-text{text-align: justify}
 .centered{
   text-align: center
 }
-.specialists{
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;}
 .map-container{
     overflow:hidden;
     padding-bottom:56.25%;
