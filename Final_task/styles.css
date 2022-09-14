@@ -9,34 +9,6 @@ table {margin-left: auto; margin-right: auto} */}
 /* body { text-align: left;}
 table tr { display: table-cell;}
 table td > *{ display: block;} */}
-
-/* general */
-.navbar-nav{
-    margin-left: 50px;
-    margin-right: 50px}
-p.space{
-    margin-bottom: 50px;}
-.header{
-    margin-left: 50px;
-    margin-right: 50px}
-.nav{
-    text-align:center;
-    display: flex;
-    flex-basis: auto;
-    height: 100%;
-    width: 100%}
-#logo{
-    height:100px}
-div.card{
-    margin: 10px}
-p.justified {
-    text-align: justify;
-    margin-left: 50px;
-    margin-right: 50px}
-ul.justified {
-      margin-left: 50px;
-      margin-right: 50px;
-      list-style: none}
 button#SignIn {
   margin-left: 0px;
   margin-right: 0px;
@@ -58,10 +30,128 @@ button#SignUp{
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;}
+/* Login */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; 
+  border: 1px solid #888;
+  width: 80%; }
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;}
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}}
+
+div.login{ 
+  border: 5px;
+  display: block;
+}
+* {box-sizing: border-box}
+
+/* Sign up*/
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;}
+
+button:hover {
+  opacity:1;}
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;}
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;}
+.container {
+  padding: 16px;}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;}
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;  }}
+/* Sign up*/
+/* general */
+div.content{
+  margin-left: 150px;
+    margin-right: 150px
+}
+.navbar-nav{
+    margin-left: 150px;
+    margin-right: 150px}
+p.space{
+    margin-bottom: 50px;}
+.header{
+  margin-left: 150px;
+    margin-right: 150px}
+.nav{
+    text-align:center;
+    display: flex;
+    flex-basis: auto;
+    height: 100%;
+    width: 100%}
+#logo{
+    height:100px}
+div.card{
+    margin: 10px}
+p.justified {
+    text-align: justify;}
+ul.justified {
+      list-style: none}
 p.card-text{text-align: justify}
-.about{
-  margin-left: 50px; 
-  margin-right: 50px; 
+.centered{
   text-align: center
 }
 .specialists{
@@ -83,125 +173,14 @@ p.card-text{text-align: justify}
     }
 div.contacts{
     display: flex;
-    margin-left: 50px;
-    margin-right: 50px
 }
 * {box-sizing: border-box}
-/* Login */
-.modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4); 
-  padding-top: 60px;
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 5px auto; 
-  border: 1px solid #888;
-  width: 80%; 
-}
-.close {
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)}
-  to {-webkit-transform: scale(1)}
-}
-
-@keyframes animatezoom {
-  from {transform: scale(0)}
-  to {transform: scale(1)}
-}
-
-div.login{ 
-  border: 5px;
-  display: block;
-}
-* {box-sizing: border-box}
-
-/* Sign up*/
-  input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-
-button:hover {
-  opacity:1;
-}
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
-}
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
-}
-.container {
-  padding: 16px;
-}
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-    width: 100%;
-  }
-}
-/* Sign up*/
-
 .footer{
   background-color: #ffffff;
-  margin: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   border-top: solid 1px #000;
 }
 div.footText{
@@ -213,8 +192,7 @@ p.footText{
   display: block;
   clear: both;
   overflow: hidden;
-  white-space: nowrap;
-  
+  white-space: nowrap; 
 }
 a.nicelinks{
   text-decoration: none;
@@ -225,7 +203,6 @@ a.nicelinks{
   white-space: nowrap;
 }
 #about_us{
-  width: 100%; 
   height: auto;
-  margin-left: 50px;
+  width: 100%;
 }
