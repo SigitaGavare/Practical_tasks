@@ -33,6 +33,10 @@ p.justified {
     text-align: justify;
     margin-left: 50px;
     margin-right: 50px}
+ul.justified {
+      margin-left: 50px;
+      margin-right: 50px;
+      list-style: none}
 button#SignIn {
   margin-left: 0px;
   margin-right: 0px;
@@ -219,4 +223,9 @@ a.nicelinks{
   clear: both;
   overflow: hidden;
   white-space: nowrap;
+}
+#about_us{
+  width: 100%; 
+  height: auto;
+  margin-left: 50px;
 }
