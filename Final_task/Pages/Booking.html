@@ -67,7 +67,37 @@
     </div>
 </nav> 
 <div>
+<!-- Login -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+<!-- Content -->
+<form class="modal-content animate" action="/action_page.php" style="max-width:600px;cursor:auto">
+<div class="container login">
+<div style="margin-left: 20px">
+    <label for="uname" style="margin-top: 20px"><b>Username</b></label>
+    <div><input type="text" placeholder="Enter Username" name="uname" required style="margin-bottom: 10px; width: 95%"></div>
+</div>
+<div style="margin-left: 20px">
+    <label for="psw"><b>Password</b></label>
+    <div><input type="password" placeholder="Enter Password" name="psw" required style="margin-bottom: 10px; width: 95%"></div>
+</div>
+<div style="margin-left: 20px">
+    <button type="submit" class="btn btn-success" style="margin-bottom: 10px; width: 95%">Login</button>
+    <div> <label>
+    <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 5px"> Remember me</label></div>
+</div>
+</div>
+<div style="margin-bottom: 20px; margin-left: 30px;">
+    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-danger" style="width: 93%">Cancel</button>
+    <p style="width: 100%;"></p>
+    <span class="psw"><a href="#">Forgot password?</a></span>
+</div>
+<div style="margin-bottom: 20px; margin-left: 30px"><span class="psw">If you don't have a profile yet, please <a href="https://sigitagavare.github.io/Practical_tasks/Final_task/Pages/SignIn.html">Sign up!</a></span></div>
+</form>
+</div>
+<!-- Login -->  
 </header>
+
 <div class="content">
 <p class="space"></p>
 <div style="margin-left: 50px;" class="centred">
@@ -88,6 +118,7 @@
 <p class="justified"></p>
 </div>
 </div>
+
 <!-- Footer -->
 <footer class="footer"> 
   <div class="d-flex">
