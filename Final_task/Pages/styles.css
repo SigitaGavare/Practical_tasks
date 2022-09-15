@@ -148,6 +148,23 @@ h5.card-title{
   color:#198754;
   margin: 0px;
 }
+p.card-title{
+  text-align: center;
+  color:#198754;
+  margin: 0px;
+  vertical-align: middle;
+}
+.subject{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+button#book{
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px; 
+  width: 100px
+}
 p.justified{
     text-align: justify;}
 ul.justified {
