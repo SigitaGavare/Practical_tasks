@@ -142,6 +142,11 @@ p.space{
   margin-bottom: 60px;}
 div.card{
     margin: 10px}
+h5.card-title{
+  text-align: center;
+  color:#198754;
+  margin: 0px;
+}
 p.justified{
     text-align: justify;}
 ul.justified {
