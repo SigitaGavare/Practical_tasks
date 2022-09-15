@@ -141,7 +141,8 @@ p.space{
   margin-top: 20px;
   margin-bottom: 60px;}
 div.card{
-    margin: 10px}
+    margin: 10px;
+  border: none;}
 h5.card-title{
   text-align: center;
   color:#198754;
