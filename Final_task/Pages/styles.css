@@ -165,6 +165,9 @@ button#book{
   height: 50px; 
   width: 100px
 }
+.prices{
+  text-align: center;
+}
 p.justified{
     text-align: justify;}
 ul.justified {
