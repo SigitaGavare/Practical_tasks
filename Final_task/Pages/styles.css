@@ -147,6 +147,7 @@ h5.card-title{
   text-align: center;
   color:#198754;
   margin: 0px;
+  vertical-align: middle;
 }
 p.card-title{
   text-align: center;
@@ -172,7 +173,10 @@ p.justified{
     text-align: justify;}
 ul.justified {
   list-style: none}
-p.card-text{text-align: justify}
+p.card-text{text-align: center}
+h5.prices{
+  margin-bottom: 20px;
+}
 .centered{
   text-align: center
 }
