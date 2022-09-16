@@ -164,7 +164,6 @@ h5.card-title{
 .title{
   text-align: center;
   color:#000000;
-  margin-top: 20px;
   margin-bottom: 20px;
   vertical-align: middle;
 }
@@ -255,6 +254,10 @@ a.nicelinks{
   margin-bottom: 16px;
 }
 #about_us{
+  height: auto;
+  width: 100%;
+}
+#pic{
   height: auto;
   width: 100%;
 }
