@@ -90,49 +90,95 @@
 <div class="content"> 
   
   <div class="d-flex" style="margin-top: 50px;">
-    <div class="mr-auto p-2 align-self-center" style="width: 100%; margin-right: 50px"> 
+    <div class="mr-auto p-2" style="width: 1200px">
+      <img id="about_us" src="https://sigitagavare.github.io/Practical_tasks/Final_task/content/healthy.jpg">
+    </div>
+    <div class="mr-auto p-2 align-self-center" style="width: 100%; margin-left: 50px"> 
       <h4 class="centered" style="margin-bottom: 20px">OUR SPECIALISTS</h4>
       <p class="centered">We have qualified nutritionists, who will assess your anthropometry such as weight and body mass index, your current, previous and family history of medical conditions and your lifestyle. Prior to your first meeting, you may be asked to keep a diet and activity diary to help establish your current situation.</p>
       <p class="centered">Based on your current situation and what you would like to achieve from your sessions we will develop a plan suitable for your individual needs. You will receive a copy of the consultation notes and any supporting information by email usually the following day.</p>
     </div>
-    <div class="mr-auto p-2" style="width: 1200px">
-      <img id="about_us" src="https://sigitagavare.github.io/Practical_tasks/Final_task/content/healthy.jpg">
-    </div>
+    
   </div>
   <h4 class="centered" style="margin-top: 75px;">FIND YOUR SPECIALIST:</h4>
 <div class="specialists" style="display:flex">
 
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 18rem;" >
         <div class="card-body">
           <h5 class="card-title">MĀRA ZĀLĪTE</h5>
         </div>
         <img class="card-img-top" src="https://sigitagavare.github.io/Practical_tasks/Final_task/content/Mara_Zalite.jpg" alt="Mara Zalite">
+        <button class="btn btn-success" onclick="desc_mara()">More information</button>
       </div>
     <div class="card" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title">MAIJA LAPA</h5>
+          <h5 class="card-title">MAIJA LAPA</h5> 
         </div>
         <img class="card-img-top" src="https://sigitagavare.github.io/Practical_tasks/Final_task/content/Maija_Lapa.jpg" alt="Maija Lapa">
+        <button class="btn btn-success" onclick="desc_maija()">More information</button>
       </div>
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 18rem;" >
         <div class="card-body">
           <h5 class="card-title">MĀRTIŅŠ RAKS</h5>
         </div>
         <img class="card-img-top" src="https://sigitagavare.github.io/Practical_tasks/Final_task/content/Martins_Raks.jpg" alt="Martins Raks">
+        <button class="btn btn-success" onclick="desc_martins()">More information</button>
       </div>
     <div class="card" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">JEKATERINA KOLAVA</h5>
         </div>
         <img class="card-img-top" src="https://sigitagavare.github.io/Practical_tasks/Final_task/content/Jekaterina_Kolava.jpg" alt="Jekaterina Kolava">
+        <button class="btn btn-success" onclick="desc_kate()">More information</button>
       </div>
 </div>
-<p class="justified" style="margin-top: 50px;"> Māra Zālīte is an experienced nutritionist specialised in children and teenagers.</p>
-<p class="justified"> Maija's goal is to improve the lives of every client. She will help You to live a healthy and balanced life.</p>
+<div class="d-flex" style="margin-top: 50px;">
+  <div class="mr-auto p-2 align-self-center" style="width: 100%; margin-right: 50px"> 
+      <div id="Mara"  style="display:none;"> 
+        <h5 class="title">MĀRA ZĀLĪTE</h5>
+        <p class="justified" > Māra Zālīte is a registered dietitian specialising in infant and child nutrition. She has a wealth of clinical experience having worked in acute hospitals for the past 8 years. Māra advises on a range of infant and child nutritional concerns.
+        With a friendly, evidence-based and practical approach, Māra provides families with confidence and understanding to meet their child's nutritional needs for optimal growth and development. Her special interests include infant feeding, complementary feeding and food allergy.</p>
+        <p class="justified">In addition to her clinical work, Māra has a passion for teaching. She works as a university guest lecturer for dietetic and medical students. Māra also presents to health care professionals on a range of nutritional topics, including the dietary management of cow’s milk protein allergy in infants.</p>
+        <p style="color: #198754;">Expertise:</p>
+        <p class="justified">Paediatric Nutrition, Allergies</p>
+      </div>
 
-<p class="justified"> Mārtiņš Raks is an experienced nutritionist specialised in adults, working in Latgale region.</p>
-<p class="justified"> Jekaterina's goal is to improve the lives of every client. She will help You to live a healthy and balanced life.</p>
-          
+      <div id="maija"  style="display:none;"> 
+        <h5 class="title">MAIJA LAPA</h5> 
+        <p class="justified"> Maija is a passionate and dedicated Dietitian, with many years of experience working in hospitals and private sector. She takes a holistic and realistic approach to help clients manage a wide 
+          range of health concerns such as weight management, family nutrition, high blood pressure and cholesterol. Her main speciality is Diabetes care and guides clients by adapting their cultural foods through meal planning and alternative cooking options.
+        </p>
+        <p class="justified">Maija supports individuals to understand their relationship with food, explores the causes of unhealthy eating habits and how to optimise nutritional intake to treat disease. Using her extensive nutrition counselling skills she helps clients achieve better blood glucose control and improve their overall quality of life.
+        </p>
+        <p style="color: #198754;">Expertise:</p>
+        <p class="justified">Weight Management, Diabetes, Cholesterol Management</p>
+      </div>
+
+      <div id="martins"  style="display:none;"> 
+        <h5 class="title">MĀRTIŅŠ RAKS</h5>
+        <p class="justified"> Mārtiņš Raks is a registered dietitian specialising in adult coeliac disease. He has worked in acute hospitals in Kurzeme for more than 5 years. Mārtiņš is heavily involved in raising awareness of coeliac disease through different channels. He has contributed to creating coeliac disease resources, 
+          he guest lectures at universities about coeliac disease and service development, has published articles related to coeliac disease, digestive health and gluten-related conditions.</p>
+        <p class="justified">
+          In addition, he also supports people living with other gluten-related conditions like gluten ataxia or non-coeliac gluten/wheat sensitivity. He can help you get diagnosed with a gluten-related condition and address food tolerance issues.
+        </p>
+        <p style="color: #198754;">Expertise:</p> 
+        <p class="justified">
+          Coeliac Disease, Gluten-related Issues
+        </p>
+      </div>
+
+      <div id="kate"  style="display:none;"> 
+        <h5 class="title">JEKATERINA KOLAVA</h5>
+        <p class="justified"> Jekaterina's goal is to improve the lives of every client. She worked in acute hospitals specialising in gastrointestinal diseases before moving into academia, where she worked as a lecturer. Jekaterina is a go-to spokesperson for media when it comes to evidence-based nutrition, regularly featuring in print, broadcast and social media. She will help You to live a healthy and balanced life.</p>
+      <p style="color: #198754;">Expertise:</p> 
+      <p>Disordered Eating, Colorectal Diseases and Disorders</p>
+      </div>          
+  </div>
+  <div class="mr-auto p-2" style="width: 600px">
+    <img id="about_us" src="https://sigitagavare.github.io/Practical_tasks/Final_task/content/spec.jpg">
+  </div>
+</div>
+
 </div>
 <!-- Footer -->
 <footer class="footer"> 
