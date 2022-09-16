@@ -55,3 +55,11 @@ function desc_kate(){
         pic.style.display = 'none';
     }
 }
+function appear(){
+    var x = document.getElementById("timendate");
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
