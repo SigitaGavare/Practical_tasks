@@ -141,7 +141,8 @@ p.space{
   margin-top: 20px;
   margin-bottom: 60px;}
 div.card{
-    margin: 10px;}
+    margin: 10px;
+    cursor: pointer}
 div.cardprices{
     margin: 10px;
     border: 1px solid rgba(0,0,0,.125);
