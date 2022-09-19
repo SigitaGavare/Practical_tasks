@@ -51,10 +51,30 @@
     width: 95vw;
     margin-left: auto;
     margin-right: auto;
-
   }
   .left-marg{
     margin-left: 0px
+  }
+  .spec_book_mob {
+    display: block;
+  }
+  .subj-book-mob{
+    display: block;
+  }
+  .date-book-mob{
+    display: block;
+  }
+  .subj-book{
+    display: none;
+  }
+  .subject{
+    display: none;
+  }
+  .spec_book{
+    display: none;
+  }
+  .date-book{
+    display: none;
   }
 }
     
@@ -97,6 +117,30 @@
   }
   .left-marg{
     margin-left: 50px
+  }
+  .spec_book_mob {
+    display: none;
+  }
+  .subj-book-mob{
+    display: none;
+  }
+  .date-book-mob{
+    display: none;
+  }
+  .spec_book{
+    display: flex;
+  }
+  .subj-book{
+    display: flex;
+  }
+  .subject{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+  }
+  .date-book{
+    display: flex;
   }
 }
     
@@ -153,12 +197,7 @@ p.card-title{
   margin: 0px;
   vertical-align: middle;
 }
-.subject{
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  display: flex;
-}
+
 #calendar{
   width: 600px;
   height: auto;
