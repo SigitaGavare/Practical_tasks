@@ -136,8 +136,7 @@
         <h5 class="card-title">JEKATERINA KOLAVA</h5>
       </div>
       <img class="card-img-top" src="https://sigitagavare.github.io/Practical_tasks/Final_task/content/Jekaterina_Kolava.jpg" alt="Jekaterina Kolava">
-    </div>
-</div>
+    </div></div>
 <h4 class="centered" style="margin-top: 50px;"> Choose appointment subject:</h4>
 <div class="subject">
   <div class="card" style="width: 15rem;">
@@ -165,56 +164,38 @@
       <img class="card-img-top" src="https://sigitagavare.github.io/Practical_tasks/Final_task/content/sub_4.jpg" >
     </div>
 </div>
-<h4 class="centered" style="margin-top: 50px;"> Choose date and time:</h4>
-<div class="d-flex" style="margin-top: 50px;">
-  <div class="p-2">
-    <div id='calendar'></div>
-  </div>
-  <div class="p-2">
-    <div id='time' class="left-marg">
-      <h5>Time:</h5>
-      <div class="d-flex flex-row">
-        <div class="p-2">
-          <button type="button" class="btn btn-outline-success timebtn">8:00</button>
-          <button type="button" class="btn btn-outline-success timebtn">8:30</button>
-          <button type="button" class="btn btn-outline-success timebtn">9:00</button>
-          <button type="button" class="btn btn-outline-success timebtn">9:30</button>
-        </div>
-            <div class="p-2">
-          <button type="button" class="btn btn-outline-success timebtn">10:00</button>
-          <button type="button" class="btn btn-outline-success timebtn">10:30</button>
-          <button type="button" class="btn btn-outline-success timebtn">11:00</button>
-          <button type="button" class="btn btn-outline-success timebtn">11:30</button>
-        </div>
-        <div class="p-2">
-          <button type="button" class="btn btn-outline-success timebtn">12:00</button>
-          <button type="button" class="btn btn-outline-success timebtn">12:30</button>
-          <button type="button" class="btn btn-outline-success timebtn">13:00</button>
-          <button type="button" class="btn btn-outline-success timebtn">13:30</button>
-        </div>
-        <div class="p-2">
-          <button type="button" class="btn btn-outline-success timebtn">14:00</button>
-          <button type="button" class="btn btn-outline-success timebtn">14:30</button>
-          <button type="button" class="btn btn-outline-success timebtn">15:00</button>
-          <button type="button" class="btn btn-outline-success timebtn">15:30</button>
-        </div>
-        <div class="p-2">
-          <button type="button" class="btn btn-outline-success timebtn">16:00</button>
-          <button type="button" class="btn btn-outline-success timebtn">16:30</button>
-          <button type="button" class="btn btn-outline-success timebtn">17:00</button>
-          <button type="button" class="btn btn-outline-success timebtn">17:30</button>
-        </div>
-        <div class="p-2">
-          <button type="button" class="btn btn-outline-success timebtn">18:00</button>
-          <button type="button" class="btn btn-outline-success timebtn">18:30</button>
-          <button type="button" class="btn btn-outline-success timebtn">19:00</button>
-          <button type="button" class="btn btn-outline-success timebtn">19:30</button>
-        </div>
-      </div>
-    </div>
-  </div>
+<h4 class="centered" style="margin-top: 50px;"> Choose appointment subject:</h4>
+<form action="/action_page.php">
+  <label for="appointment">Choose appointment date:</label>
+  <input type="date" id="appointment" name="appointment">
+</form>
 </div>
+
+<div>
+  <h4 style="margin-top: 50px;"> Choose your specialist:</h4>
+  <select class="custom-select" style="display: block;" id="mob-spec">
+    <option selected>Choose your specialist:</option>
+    <option value="Māra Zālīte">Māra Zālīte</option>
+    <option value="Maija Lapa">Maija Lapa</option>
+    <option value="Mārtiņš Raks">Mārtiņš Raks</option>
+    <option value="Jekaterina Kolava">Jekaterina Kolava</option>
+  </select>
 </div>
+<div>
+  <h4 style="margin-top: 50px;"> Choose appointment subject:</h4>
+  <select class="custom-select" style="display: block;" id="mob-subj">
+    <option selected>Choose appointment subject:</option>
+    <option value="Initial Nutrition Counseling Assessment">Initial Nutrition Counseling Assessment (90 min)</option>
+    <option value="Eating Disorder Initial Assessment">Eating Disorder Initial Assessment (90 min)</option>
+    <option value="Follow-Up Appointment">Follow-Up Appointment (30 or 60 min)</option>
+    <option value="Online Consultations">Online Consultations</option>
+  </select>
+</div>
+<h4 style="margin-top: 50px;"> Choose appointment date:</h4>
+<form action="/action_page.php">
+    <input type="date" id="appointment" name="appointment">
+</form>
+
 <div style="margin-top: 30px;">
   <h5> Your appointment information:</h5>
   <p>Specialist:</p>
