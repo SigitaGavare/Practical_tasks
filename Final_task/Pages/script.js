@@ -1,3 +1,14 @@
+function openMenu(){
+    var x = document.getElementById("mobile-nav");
+    if (x.style.display === 'none') {
+        x.style.display = 'block'
+        x.className = "dropdown-menu show"
+    } 
+        else {
+        x.style.display = 'none';
+    }
+}
+
 function desc_mara(){
     var x = document.getElementById("Mara");
     var pic = document.getElementById("spec");
