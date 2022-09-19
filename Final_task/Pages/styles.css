@@ -259,6 +259,11 @@ a.nicelinks{
   height: auto;
   width: 100%;
 }
+#prof_pic{
+  width: 500px;
+  margin-top: 50px;
+
+}
 #pic{
   height: auto;
   width: 100%;
@@ -273,6 +278,7 @@ a.nicelinks{
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  display: flex;
 }
 .wrapper{ 
   margin-top: 50px;
