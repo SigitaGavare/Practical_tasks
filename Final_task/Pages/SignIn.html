@@ -30,8 +30,17 @@
   
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- mobile navigation -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <div class="dropdown show">
+      <a class="btn btn-success dropdown-toggle navbar-toggler" onclick="openMenu()" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Menu</a>
+      <div id="mobile-nav" class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="display: none">
+        <a class="dropdown-item" href="https://sigitagavare.github.io/Practical_tasks/Final_task/index.html">About Us</a>
+        <a class="dropdown-item" href="https://sigitagavare.github.io/Practical_tasks/Final_task/Pages/Specialists.html">Our Nutritionists</a>
+        <a class="dropdown-item" href="https://sigitagavare.github.io/Practical_tasks/Final_task/Pages/Booking.html">Book Now</a>
+        <a class="dropdown-item" href="https://sigitagavare.github.io/Practical_tasks/Final_task/Pages/Prices.html">Price List</a>        
+        <a class="dropdown-item" href="https://sigitagavare.github.io/Practical_tasks/Final_task/Pages/Contacts.html">Contacts</a>
+      </div>
+    </div>
     </button>
     <!-- web navigation -->
     <div class="collapse navbar-collapse" id="navbarNav">
