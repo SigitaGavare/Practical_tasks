@@ -44,9 +44,8 @@
     height: auto;
     width: 95vw;
     margin-left: auto;
-    margin-right: auto;
-
-  }
+    margin-right: auto;  }
+    
   .left-marg{
     margin-left: 0px
   }}
@@ -128,8 +127,8 @@ p.space{
     width: 100%}
 #logo{
     height:100px;
-  margin-top: 20px;
-margin-bottom: 60px;}
+    margin-top: 20px;
+    margin-bottom: 60px;}
 #logofooter{
   height:100px;
   margin-top: 20px;
