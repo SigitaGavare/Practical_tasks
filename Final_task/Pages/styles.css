@@ -3,7 +3,7 @@
   div.header {
     margin-left: 0px;
     margin-right: 0px;
-    display: block;    }
+    display: flex!important;    }
   .centered{
       text-align: center;
       width: 95vw;
