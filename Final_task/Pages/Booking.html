@@ -126,9 +126,9 @@
       </div>
       <img class="card-img-top" src="https://sigitagavare.github.io/Practical_tasks/Final_task/content/Jekaterina_Kolava.jpg" alt="Jekaterina Kolava">
     </div>
-  </div>
+</div>
 <div class="spec_book_mob">
-  <select class="custom-select form-select" style="display: block;" id="mob-spec">
+  <select class="custom-select form-select" id="mob-spec">
     <option selected>Choose your specialist:</option>
     <option value="Māra Zālīte">Māra Zālīte</option>
     <option value="Maija Lapa">Maija Lapa</option>
@@ -163,8 +163,8 @@
       <img class="card-img-top" src="https://sigitagavare.github.io/Practical_tasks/Final_task/content/sub_4.jpg" >
     </div>
 </div>
-<div class="subj-book-mob"></div>
-  <select class="custom-select form-select" style="display: block;" id="mob-subj">
+<div class="subj-book-mob">
+  <select class="custom-select form-select" id="mob-subj">
     <option selected>Choose appointment subject:</option>
     <option value="Initial Nutrition Counseling Assessment">Initial Nutrition Counseling Assessment (90 min)</option>
     <option value="Eating Disorder Initial Assessment">Eating Disorder Initial Assessment (90 min)</option>
@@ -172,30 +172,35 @@
     <option value="Online Consultations">Online Consultations</option>
   </select>
 </div>
+
 <h4 class="centered" style="margin-top: 50px;"> Choose appointment date:</h4>
 <div class="date-book">
 <form action="/action_page.php">
+  <label for="appointment">Choose appointment date: </label>
+  <input class="m-datepicker" type="date" id="appointment" name="appointment">
+</form>
+</div>
+
+<div class="date-book-mob">
+<form action="/action_page.php">
+  <label for="appointment">Choose appointment date: </label>  
   <input type="date" id="appointment" name="appointment">
 </form>
 </div>
 </div>
-<div class="date-book-mob">
-<form action="/action_page.php">
-    <input type="date" id="appointment" name="appointment">
-</form>
-</div>
-
 <div style="margin-top: 30px;">
   <h5> Your appointment information:</h5>
   <p>Specialist:</p>
   <p>Subject:</p>
   <p>Time:</p>
-<button class="btn btn-success"  id="book" style="margin-top: 50px;"> Book!</button></div>
+<button class="btn btn-success"  id="book" style="margin-top: 50px;"> Book!</button>
+</div>
+<div class="centered">
 <p class="centered" style="margin-top: 50px;">Please cancel, confirm or change the booking at least 24h before the appointment.</p>
 <p class="centered">Arrive at your appointment on time and without guests. Make sure you have your ID card or passport.</p>
 <p class="centered">If you will be running late please contact us in time.</p>
 </div>
-
+</div>
 <!-- Footer -->
 <footer class="footer"> 
   <div class="d-flex">

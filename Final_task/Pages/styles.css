@@ -4,7 +4,10 @@
     margin-left: 0px;
     margin-right: 0px;
     display: block;    }
-    
+  .centered{
+      text-align: center;
+      width: 95vw;
+    }  
   .footer {
     margin:0px;
     display: block;    }
@@ -57,12 +60,15 @@
   }
   .spec_book_mob {
     display: block;
+    width: 90vw;
   }
   .subj-book-mob{
     display: block;
+    width: 90vw;
   }
   .date-book-mob{
     display: block;
+    width: 90vw;
   }
   .subj-book{
     display: none;
