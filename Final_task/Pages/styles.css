@@ -95,6 +95,16 @@
     margin-left: auto;
     margin-right: auto;
   }
+  #pers_info{
+    width: 95vw;
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;  }
+
+  .appointments{
+    margin-left: 0px;
+    width: 95vw  ;
+    margin-top: 50px; }
 }
     
 /* desktop */
@@ -174,6 +184,16 @@
   }
   div.contacts{
     display: flex}
+
+  #pers_info{
+    width: 40%;
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;  }
+
+  .appointments{
+    margin-left: 30px;
+    width: 90%;   }
 }
     
 
@@ -299,9 +319,6 @@ a.nicelinks{
   white-space: nowrap;
   margin-bottom: 16px;
 }
-#prof_pic{
-  width: 500px;
-  margin-top: 50px;}
 
 #pic{
   height: auto;
@@ -312,69 +329,25 @@ a.nicelinks{
 }
 
 /* profile info */
-*.profile{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  display: flex;
-}
-.wrapper{ 
+#prof_pic{
+  width: 360px;}
+.logout{
+  display: block;
   margin-top: 50px;
-  width: 450px;
-  display: flex;}
-.wrapper .left{
-  width: 35%;
-  background: linear-gradient(to right,#198754,#519676);
-  padding: 5px 5px;
-  text-align: center;
-  color: #fff;
-  border-radius: 5px;
-  margin-bottom: 10px;
 }
-.wrapper .left h5{
-  margin-bottom: 10px;
-}
-.wrapper .right{
-  width: 65%;
-  background: #fff;
-  padding: 5px 5px 0px 15px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-.wrapper .right .info,
-.wrapper .right .appointments{
-  margin-bottom: 25px;
-}
-.wrapper .right .appointments h4{
+
+.appointments h4{
     margin-bottom: 15px;
     padding-bottom: 5px;
     border-bottom: 1px solid #e0e0e0;
   text-transform: uppercase;
 }
-.wrapper .right .info_data,
-.wrapper .right .appointments_data{
+.appointments_data{
   display:block;
   justify-content: space-between;
 }
-.wrapper .right .info_data .data,
-.wrapper .right .appointments_data .data{
-  width: 90%;
-  margin-bottom: 20px;
-  border: 1px solid rgba(69, 90, 100, 0.188);
-  border-radius: 5px;
-}
-.wrapper .right .info_data .data h4,
-.wrapper .right .appointments_data .data h4{
-    color: #353c4e;
-    margin-bottom: 5px;
-}
 
-.wrapper .right .info_data .data p,
-.wrapper .right .appointments_data .data p{
-  margin-bottom: 10px;
-  color: #778491;
-}
+/*  */
 button#SignIn {
   margin-left: 0px;
   margin-right: 0px;
