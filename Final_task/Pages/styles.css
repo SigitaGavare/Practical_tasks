@@ -105,10 +105,20 @@
     margin-left: 0px;
     width: 95vw  ;
     margin-top: 50px; }
+  div.signup{
+    width: 100vw;
+  }
+  .Questions{
+    width: 95vw;
+    text-align: justify;
+  }
 }
     
 /* desktop */
 @media (min-width:500px){
+  div.signup{
+    width: 600px;
+  }
   .message{
     display: block; 
     margin-top: 50px;
@@ -346,6 +356,10 @@ a.nicelinks{
   display:block;
   justify-content: space-between;
 }
+button.btn-link{
+  text-decoration: none;
+  color: #000;
+}
 
 /*  */
 button#SignIn {
@@ -424,29 +438,26 @@ input[type=text], input[type=password] {
     display: inline-block;
     border: none;
     background: #f1f1f1;  }
-  
   input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
     outline: none;  }
-  
   hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;  }
-    
-    button:hover {
+  button:hover {
     opacity:1;  }
   .cancel {
     padding: 14px 20px;  }
-  .cancel, .signup {
-    float: left;
-    width: 50%;  }
+  button.cancel {
+    width: 49%;
+  }
+  button.signup{
+    width: 49%;
+  }
   .container {
     padding: 16px;  }
   .clearfix::after {
     content: "";
     clear: both;
     display: table;  }
-  @media screen and (max-width: 300px) {
-    .cancel, .signup {
-      width: 100%;    }  }
   /* Sign up*/
