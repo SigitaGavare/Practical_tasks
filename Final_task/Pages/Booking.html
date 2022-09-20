@@ -69,7 +69,7 @@
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 <!-- Content -->
-<form class="modal-content animate" action="/action_page.php" style="max-width:600px;cursor:auto">
+<form class="modal-content animate" action="/action_page.php" style="max-width:600px; cursor:auto">
 <div class="container login">
 <div style="margin-left: 20px">
     <label for="uname" style="margin-top: 20px"><b>Username</b></label>
@@ -174,16 +174,20 @@
 <h4 class="centered" style="margin-top: 50px;"> Choose appointment date:</h4>
 <div class="date-book">
 <form action="/action_page.php">
-  <label for="appointment">Choose appointment date: </label>
+  <label for="appointment" style="margin-top: 20px;">Choose appointment date: </label>
   <input class="m-datepicker" type="date" id="appointment" name="appointment">
 </form>
+<label for="timepicker" style="margin-top: 20px;">Choose appointment time: </label>
+<input id="timepicker" type="time"/>
 </div>
 
 <div class="date-book-mob">
-<form action="/action_page.php">
+<form action="/action_page.php" style="margin-top: 20px;">
   <label for="appointment">Choose appointment date: </label>  
   <input type="date" id="appointment" name="appointment">
 </form>
+<label for="timepicker" style="margin-top: 20px;">Choose appointment time: </label>
+<input id="timepicker" type="time"/>
 </div>
 </div>
 <div style="margin-top: 30px;">
@@ -191,7 +195,23 @@
   <p>Specialist:</p>
   <p>Subject:</p>
   <p>Time:</p>
-<button class="btn btn-success"  id="book" style="margin-top: 50px;"> Book!</button>
+
+<button class="btn btn-success"  id="book" style="margin-top: 50px;" onclick="document.getElementById('book-success').style.display='block'"> Book!</button>
+  <div id="book-success" class="modal">
+    <span onclick="document.getElementById('book-success').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <!-- Content -->
+  <form class="modal-content animate" action="/action_page.php" style="max-width:600px; cursor:auto">
+  <div class="container login">
+  <div style="margin-left: 20px">
+    <img id="book-pic" src="https://sigitagavare.github.io/Practical_tasks/Final_task/content/background.jpg"/>
+      <h4 class="centered"> Your booking was successful!</h4>
+      <p class="centered"> You will receive an e-mail after your specialist has approved your appointment.</p>
+  </div>
+  <div style="margin-bottom: 20px; margin-left: 30px;">
+      <button type="button" onclick="document.getElementById('book-success').style.display='none'" class="btn btn-success" style="width: 93%">Return</button>
+  </div>
+  </form>
+  </div>
 </div>
 <div class="centered">
 <p class="centered" style="margin-top: 50px;">Please cancel, confirm or change the booking at least 24h before the appointment.</p>
@@ -199,6 +219,7 @@
 <p class="centered">If you will be running late please contact us in time.</p>
 </div>
 </div>
+
 <!-- Footer -->
 <footer class="footer"> 
   <div class="d-flex">

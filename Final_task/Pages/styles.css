@@ -3,17 +3,17 @@
   div.header {
     margin-left: 0px;
     margin-right: 0px;
-    display: flex!important;    }
+    display: flex!important;}
   .centered{
       text-align: center;
-      width: 95vw;
-    }  
+      width: 95vw;}  
+
   .footer {
     margin:0px;
-    display: block;    }
+    display: block;}
   div.d-flex{
-    display: block!important;
-  }
+    display: block!important;  }
+
   div.content {
     margin-left: 5px;
     margin-right: 5px;
@@ -184,7 +184,7 @@
     display: flex;
   }
   .date-book{
-    display: flex;
+    display: block;
   }
   #map-mob{
     display: none;
@@ -205,12 +205,12 @@
     margin-left: 30px;
     width: 90%;   }
 }
-    
-
-
   /* general */
-
-
+  #book-pic{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
 p.space{
   margin-bottom: 50px;}
 .header{
@@ -302,16 +302,12 @@ h5.prices{
     top:0;
     height:100%;
     width:100%;
-    position:absolute;
-    }
-
-
+    position:absolute;    }
 
 div.footText{
   text-align: center;
   width: 390px!important;
 }
-
 p.footText{
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -329,7 +325,6 @@ a.nicelinks{
   white-space: nowrap;
   margin-bottom: 16px;
 }
-
 #pic{
   height: auto;
   width: 100%}

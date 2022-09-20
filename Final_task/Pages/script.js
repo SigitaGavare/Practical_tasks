@@ -8,7 +8,6 @@ function openMenu(){
         x.style.display = 'none';
     }
 }
-
 function desc_mara(){
     var x = document.getElementById("Mara");
     var pic = document.getElementById("spec");
