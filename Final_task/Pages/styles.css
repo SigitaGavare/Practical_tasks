@@ -82,10 +82,28 @@
   .date-book{
     display: none;
   }
+  #map-mob{
+    display: block;
+    margin-left:0px
+  }
+  #map{
+    display: none;
+  }
+  div.contacts{
+    display: block;
+    width: 55vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
     
 /* desktop */
 @media (min-width:500px){
+  .message{
+    display: block; 
+    margin-top: 50px;
+    width: 800px
+  }
   div.content{
     margin-left: 150px;
     margin-right: 150px  }
@@ -148,6 +166,14 @@
   .date-book{
     display: flex;
   }
+  #map-mob{
+    display: none;
+  }
+  #map{
+    display: block;
+  }
+  div.contacts{
+    display: flex}
 }
     
 
@@ -248,8 +274,7 @@ h5.prices{
     width:100%;
     position:absolute;
     }
-div.contacts{
-    display: flex}
+
 
 
 div.footText{
